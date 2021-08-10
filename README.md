@@ -9,8 +9,8 @@ description: >-
 
 O livro será dividido nos tópicos:
 
-* [ ] R
-  * [ ] Estatistica
+* [x] R
+  * [x] Estatistica
   * [ ] Inteligência artíficial
   * [ ] Florestais
   * [ ] Geoprocessamento
