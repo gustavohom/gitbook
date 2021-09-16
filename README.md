@@ -29,7 +29,7 @@ O livro será dividido nos tópicos:
   * [ ] Iniciados
   * [ ] Etc
 
-Com o tempo, irei acrescentando e melhorando. Vale novamente ressaltar: 
+Com o tempo, irei acrescentando e melhorando. Vale novamente ressaltar:
 
 {% hint style="danger" %}
 **ESTE LIVRO É APENAS PARA CONSULTA PESSOAL. NÃO ME RESPONSABILIZO POR ERROS OU QUAISQUER INFORMAÇÕES ERRADAS OU CONFLITANTES**
