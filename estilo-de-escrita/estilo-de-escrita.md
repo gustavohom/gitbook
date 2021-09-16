@@ -60,18 +60,18 @@ Não deve-se usar:
 * Simbolos
 * Acentos
 * Palavras fora de contexto
-* Preposições \(de, do, da\)
+* Não incluir conectores como `de`, `da`, `dos`, `e`, `a`, `em`, etc.
 
 Pode-se usar
 
 * Letras
 * Palavras
 * Numeros
-* Os sibolos  **-**   e   **\_**
+* Os sibolos **`-`**   e   **`_`**
 
 ## **Pastas**
 
-Um estilo de padronização de pastas para dois projetos que usam o mesmo banco de dados. A pasta input são dos dados corrigidos , filtrados ou separados do banco de dados original. Os arquivos output são as saidas finais para os arquivos. Estou tentando criar uma pasta chamada "processados" para os processos intermediarios, mas sem eficacia para saida final, como por exemplo: Na pasta dados tenho um raster. Em input tenho um recorte do raster especificando a área de interesse. Em "processados" tenho o filtro para retirada de outliers do raster. Em output os arquivos processados do raster. Em entrega os produtos de interesse finalizados. Essa organização permite com que os dados sejam consultados pelo caminho relativo "../../dados". 
+Um estilo de padronização de pastas para dois projetos que usam o mesmo banco de dados. A pasta input são dos dados corrigidos , filtrados ou separados do banco de dados original. Os arquivos output são as saidas finais para os arquivos. Estou tentando criar uma pasta chamada `processados`para os processos intermediarios, mas sem eficacia para saida final, como por exemplo: Na pasta dados tenho um raster. Em input tenho um recorte do raster especificando a área de interesse. Em `processados`tenho o filtro para retirada de outliers do raster. Em output os arquivos processados do raster. Em entrega os produtos de interesse finalizados. Essa organização permite com que os dados sejam consultados pelo caminho relativo `../../dados` .
 
 Os dados brutos devem ser apenas para leitura. 
 
