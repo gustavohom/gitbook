@@ -71,7 +71,7 @@ Pode-se usar
 
 ## **Pastas**
 
-Um estilo de padronização de pastas para dois projetos que usam o mesmo banco de dados. A pasta input são dos dados corrigidos , filtrados ou separados do banco de dados original. Os arquivos output são as saidas finais para os arquivos. Estou tentando criar uma pasta chamada `processados`para os processos intermediarios, mas sem eficacia para saida final, como por exemplo: Na pasta dados tenho um raster. Em input tenho um recorte do raster especificando a área de interesse. Em `processados`tenho o filtro para retirada de outliers do raster. Em output os arquivos processados do raster. Em entrega os produtos de interesse finalizados. Essa organização permite com que os dados sejam consultados pelo caminho relativo `../../dados` .
+Um estilo de padronização de pastas para dois projetos que usam o mesmo banco de dados. A pasta input são dos dados corrigidos , filtrados ou separados do banco de dados original. Os arquivos output são as saidas finais para os arquivos. Estou tentando criar uma pasta chamada `processados`para os processos intermediarios, mas sem eficacia para saida final, como por exemplo: Na pasta dados tenho um raster. Em input tenho um recorte do raster especificando a área de interesse. Em `processados`tenho o filtro para retirada de outliers do raster. Em output os arquivos processados do raster. Em entrega os produtos de interesse finalizados. Essa organização permite com que os dados sejam consultados pelo caminho relativo `../../dados` . A pasta `src` contém scripts que iremos chamar com `source()`, como funções por exemplo.
 
 Os dados brutos devem ser apenas para leitura. 
 
@@ -88,6 +88,7 @@ Pasta raiz
 |    \-- projetos
 |        +-- inventario_florestal
 |         |    +-- 00_scripts
+|         |    |   +-- src
 |         |    +-- 01_input
 |         |    |   +-- tb
 |         |    |   +-- geo
@@ -97,7 +98,7 @@ Pasta raiz
 |         |    |   +-- grafico
 |         |    |   +-- tabela
 |         |    |   +-- geo
-|         |    +-- 03_entrega
+|         |    \-- 03_entrega
 |         \-- cubagem_arvores
 \-- local-02
 
@@ -110,6 +111,7 @@ PROJETOS COM DIFERENTES BANCOS DADOS
     +-- dados
     |   +-- brutos
     |   +-- processados
+    +-- docs
     \-- entrega
         +-- relatorio
 ```
@@ -122,6 +124,8 @@ As pastas podem ser escritas seguindo as regras gerais. Preferencialemente devem
 * `mapas-rj`
 * `mapas_minas`_`_`_`gerais-bh`
 * `faturamento-2021-08-13`
+
+Sempre que possível, adicione uma breve descrição do projeto em um arquivo README.txt ou README.md
 
 ## Arquivos
 
@@ -267,11 +271,52 @@ head(data_trips)
 
 ## No R
 
-As variaveis devem ter preferencialmente o nome no singular. Quando obrigatoriamente escrito no plural, priorize o uso de coletivo. Exemplo: `funcionarios`deve ser trocado por `equipe` .
+### Algumas boas práticas
 
-Referências
+* Começe o codigo sempre com o nome do autor, data de inicio do projeto, nome do projeto, uma pequena descrição do projeto.
+* Particione seu codigo usando `ctrl` + `shift` + `r` ou `#----` ou `#====`  exemplo:
+
+```text
+# Parte 1 --------------------------
+
+a <- c("teste", "teste2")
+
+# Parte 2 --------------------------
+
+print(a)
+```
+
+* Comente os códigos e nomeie os chunks!!!
+* Use `library( )` e não `require( )`
+* Não use `atach( )` e tente evitar `setwd( )`
+* Não salve `workspace`
+* As variaveis devem ter preferencialmente o nome no singular. Quando obrigatoriamente escrito no plural, priorize o uso de coletivo. Exemplo: `funcionarios`deve ser trocado por `equipe`.
+* Carregue os pacotes no inicio do código
+* Em seguida, carregue os dados
+* Depois, carregue as funções \(source\)
+* Por fim, escreva os demais itens do código
+* Prefira não usar o `return` implicito do R, escreva `return(x)`.
+* Atibua variaveis e funções com `<-` e não `=`
+* Variaveis escopo local com `_` no final, por exemplo `carro_`, isso evitará que funções procurem variaveis fora do escopo planejado.
+* Nomes das variaveis devem ser ou começar o contexto como **substantivos** e as ****funções como **verbos**.
+* 
+## Referências
 
 &lt;https://www.youtube.com/watch?v=wXIuvdhMOsE&list=TLPQMTMwOTIwMjGPNNiIEa2kEA&index=9&gt;
+
+{% embed url="https://emilyriederer.netlify.app/post/column-name-contracts/" %}
+
+{% embed url="https://style.tidyverse.org/index.html" %}
+
+{% embed url="https://nicercode.github.io/" %}
+
+{% embed url="https://chrisvoncsefalvay.com/2018/08/09/structuring-r-projects/" %}
+
+{% embed url="https://kdestasio.github.io/post/r\_best\_practices/" %}
+
+{% embed url="https://basedosdados.github.io/mais/style\_data/\#nomea%C3%A7%C3%A3o-de-bases-e-tabelas" %}
+
+
 
 
 
