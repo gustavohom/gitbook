@@ -329,8 +329,9 @@ Para as variaveis podemos escrever um prefixo definindo o tipo de arquivo
 Os sufixo podem especificar os processos posteriores, com uso de `_` ou `.`
 
 1. vec\_consumo\_gasolina
-2. vec\_consumo\_gasolina.dez\_anos
-3. vec\_consumo\_gasolina.dez\_anos
+2. \_\_
+3. vec\_consumo\_gasolina\_dez\_anos
+4. vec\_consumo\_gasolina.dez\_anos
 
 ## Referências
 
