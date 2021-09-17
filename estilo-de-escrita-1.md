@@ -299,7 +299,39 @@ print(a)
 * Atibua variaveis e funções com `<-` e não `=`
 * Variaveis escopo local com `_` no final, por exemplo `carro_`, isso evitará que funções procurem variaveis fora do escopo planejado.
 * Nomes das variaveis devem ser ou começar o contexto como **substantivos** e as ****funções como **verbos**.
-* 
+
+### Estilo dentro do R
+
+| Tipo | Estilo | Exemplo |
+| :--- | :--- | :--- |
+| Variaveis | snake\_case | nome\_alunas |
+| Funções | snake\_case | calcular\_aprovacao |
+| Classes | snake + Pascal case | Projeto\_Casa |
+| Objetos criados por classes | snake + camel case | casa\_Construida |
+| Metodos | snake\_case | dimencionar\_casa |
+| Interface | lower ou  snake\_case | txt ou txt\_descricao |
+
+Para as variaveis podemos escrever um prefixo definindo o tipo de arquivo
+
+| Abreviação | Tipo |
+| :--- | :--- |
+| vec\_ | vetor |
+| con\_ | constante |
+| tab\_ | tabela |
+| lst\_ | lista |
+| mat\_ | matriz |
+| img\_ | imagem |
+| pnt\_ | ponto |
+| pol\_ | poligono |
+| rst\_ | raster |
+| bin\_ | binario |
+
+Os sufixo podem especificar os processos posteriores, com uso de `_` ou `.`
+
+1. vec\_consumo\_gasolina
+2. vec\_consumo\_gasolina.dez\_anos
+3. vec\_consumo\_gasolina.dez\_anos
+
 ## Referências
 
 &lt;https://www.youtube.com/watch?v=wXIuvdhMOsE&list=TLPQMTMwOTIwMjGPNNiIEa2kEA&index=9&gt;
