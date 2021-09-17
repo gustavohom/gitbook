@@ -116,35 +116,35 @@ PROJETOS COM DIFERENTES BANCOS DADOS
 
 As pastas podem ser escritas seguindo as regras gerais. Preferencialemente devem ser escritas em sneak\_case com letras minúsculas. Recomendo usar underline \( \_ \) para criação de contexto e traço \( - \) para sequenciamento, referencias geografica, data, individualizações ... Exemplo:
 
-* projeto\_carbono-01
-* projeto\_carbono-02
-* mapas-mg
-* mapas-rj
-* mapas\_minas_\__gerais-bh
-* faturamento-2021-08-13
+* `projeto_carbono-01`
+* `projeto_carbono-02`
+* `mapas-mg`
+* `mapas-rj`
+* `mapas_minas`_`_`_`gerais-bh`
+* `faturamento-2021-08-13`
 
 ## Arquivos
 
 Os arquivos seguem a mesma terminologias que as pastas, porém com algumas modificações:
 
 * Os gráficos podem ter contexto com definido o tipo de grafico e dados usados
-  * col\_carro\_consumo : gráfico de coluna com eixos carro e consumo
-  * dis\_aluna\_nota : gráfico de disperção de com eixos aluna e nota
-  * dis\_mes\_nota-Gabriely : gráfico de dispersão de nota ao longo dos meses da aluna Grabriely
+  * `col_carro_consumo` : gráfico de coluna com eixos carro e consumo
+  * `dis_aluna_nota` : gráfico de disperção de com eixos aluna e nota
+  * `dis_mes_nota-Gabriely` : gráfico de dispersão de nota ao longo dos meses da aluna Grabriely
 * De preferência para palavras no singular
 * Prefixos especificam o tipo de arquivo e sufixos os processos
-  * dtm\_solos\_declivosos
-  * dtm\_solos\_declivosos-itamarandiba
-  * dtm\_solos\_declivosos-itamarandiba\_filtrado
+  * `dtm_solos_declivosos`
+  * `dtm_solos_declivosos-itamarandiba`
+  * `dtm_solos_declivosos-itamarandiba_filtrado`
 * Prefixos também podem ser invertidos com sufixos para agregamento de dados
-  * 2021-02-corte\_eucalipto
-  * 2021-02-corte\_pinus
-  * 2019-03-corte\_pinus
-  * 2019-03-corte\_teca
+  * `2021-02-corte_eucalipto`
+  * `2021-02-corte_pinus`
+  * `2019-03-corte_pinus`
+  * `2019-03-corte_teca`
 * É aconselhável o uso de sufixo para arquivos que seguem uma sequencia lógica
-  * 01\_filtrar\_dados
-  * 02\_calcular\_media
-  * 03\_grafico\_medias
+  * `01_filtrar_dados`
+  * `02_calcular_media`
+  * `03_grafico_medias`
 
 ## Tabelas
 
@@ -267,11 +267,7 @@ head(data_trips)
 
 ## No R
 
-
-
-Singular ID
-
-
+As variaveis devem ter preferencialmente o nome no singular. Quando obrigatoriamente escrito no plural, priorize o uso de coletivo. Exemplo: `funcionarios`deve ser trocado por `equipe` .
 
 Referências
 
