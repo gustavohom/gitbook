@@ -8,5 +8,5 @@
 
 ## Pacotes
 
-* [Untitled](pacotes/untitled.md)
-
+* [Linguagem R](pacotes/untitled/README.md)
+  * [Funções basicas](pacotes/untitled/funcoes-basicas.md)

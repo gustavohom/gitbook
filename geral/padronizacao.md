@@ -8,13 +8,13 @@ description: >-
 
 ## Introdução
 
-        A forma como lemos e entendemos o mundo ao nosso redor é derivado de padrões. Ao vermos sistematicamente caracteristicas conceituais de uma determinada forma, aprendemos e associamos estas caracteristicas como uma representação generalizada deste item. Como exemplo: você provavelmente consegue identificar um palhaço apenas olhanndo para ele 🤡. As forma de se vestir, os adornos e a maquiagem permite que você separe alguém vestido de palhaço de um empresário qualquer.
+&#x20;       A forma como lemos e entendemos o mundo ao nosso redor é derivado de padrões. Ao vermos sistematicamente caracteristicas conceituais de uma determinada forma, aprendemos e associamos estas caracteristicas como uma representação generalizada deste item. Como exemplo: você provavelmente consegue identificar um palhaço apenas olhanndo para ele 🤡. As forma de se vestir, os adornos e a maquiagem permite que você separe alguém vestido de palhaço de um empresário qualquer.
 
-        Na escrita, esse fato também acontece. O simples fato de você ler este texto demonstra o quão importante é manter os padrões. Se os simbolos  de uma escrita variassem em relação a cada escritor, jamais seriamos capaz de transmitir conhecimento. 
+&#x20;       Na escrita, esse fato também acontece. O simples fato de você ler este texto demonstra o quão importante é manter os padrões. Se os simbolos  de uma escrita variassem em relação a cada escritor, jamais seriamos capaz de transmitir conhecimento.&#x20;
 
-        Nas linguagens computacionais este fato é uma meia verdade. Apesar de as regras de escrita de que cada linguagem mantenha padrões obrigatórios, os programadores são livres para definir a nomeclatura de variaveis, objetos, arquivos, etc. Para melhor visualizarmos esse fato, imaginemos que um progrador queira salvar um vetor contendo nome de três alunas de graduação em uma variavel qualquer. Então ele pode salvar algo como:
+&#x20;       Nas linguagens computacionais este fato é uma meia verdade. Apesar de as regras de escrita de que cada linguagem mantenha padrões obrigatórios, os programadores são livres para definir a nomeclatura de variaveis, objetos, arquivos, etc. Para melhor visualizarmos esse fato, imaginemos que um progrador queira salvar um vetor contendo nome de três alunas de graduação em uma variavel qualquer. Então ele pode salvar algo como:
 
-```text
+```
 nA
 Alunasghs
 variavelDEnomes
@@ -30,25 +30,25 @@ nome_alunas
 NOMEALUNAS
 ```
 
-        Percebemos então que apesar de ser uma variavel contendo três nomes, a nomeclatura para ela pode variar de acordo com cada autor. A tentativa deste capitulo não é ter um padrão obrigatório quanto a escrita e quais nomes devem ser usados, mas um guia para auxiliar a escrita mais eficaz dos nomes.
+&#x20;       Percebemos então que apesar de ser uma variavel contendo três nomes, a nomeclatura para ela pode variar de acordo com cada autor. A tentativa deste capitulo não é ter um padrão obrigatório quanto a escrita e quais nomes devem ser usados, mas um guia para auxiliar a escrita mais eficaz dos nomes.
 
 ## Princiapais estilos
 
 Não me aprofundarei na história ou a motivação de cada um dos estilos que citarei a seguir. Alguns dos principais estilos de escrita na programação e seus respectivos exemplos:
 
-| Estilo | Exemplo |
-| :--- | :--- |
-| Lower Case | nomealunas |
-| Upper Case | NOMEALUNAS |
-| Mixed Case | nOmEaLuNa |
-| Lower Upper | nomeALUNA |
-| Upper Lower | NOMEaluna |
-| Camel Case | nomeAlunas |
-| Pascal Case | NomeAlunas |
-| Snake Case \(under\) | nome\_aluna |
-| Snake Case \(upper\) | NOME\_ALUNA |
-| Kebab Case | nome-aluna |
-| Dot Case | nome.aluna |
+| Estilo             | Exemplo     |
+| ------------------ | ----------- |
+| Lower Case         | nomealunas  |
+| Upper Case         | NOMEALUNAS  |
+| Mixed Case         | nOmEaLuNa   |
+| Lower Upper        | nomeALUNA   |
+| Upper Lower        | NOMEaluna   |
+| Camel Case         | nomeAlunas  |
+| Pascal Case        | NomeAlunas  |
+| Snake Case (under) | nome\_aluna |
+| Snake Case (upper) | NOME\_ALUNA |
+| Kebab Case         | nome-aluna  |
+| Dot Case           | nome.aluna  |
 
 ## Geral
 
@@ -67,15 +67,15 @@ Pode-se usar
 * Letras
 * Palavras
 * Numeros
-* Os sibolos **`-`**   e   **`_`**
+* Os sibolos **`-` **  e  ** `_`**
 
 ## **Pastas**
 
 Um estilo de padronização de pastas para dois projetos que usam o mesmo banco de dados. A pasta input são dos dados corrigidos , filtrados ou separados do banco de dados original. Os arquivos output são as saidas finais para os arquivos. Estou tentando criar uma pasta chamada `processados`para os processos intermediarios, mas sem eficacia para saida final, como por exemplo: Na pasta dados tenho um raster. Em input tenho um recorte do raster especificando a área de interesse. Em `processados`tenho o filtro para retirada de outliers do raster. Em output os arquivos processados do raster. Em entrega os produtos de interesse finalizados. Essa organização permite com que os dados sejam consultados pelo caminho relativo `../../dados` . A pasta `src` contém scripts que iremos chamar com `source()`, como funções por exemplo.
 
-Os dados brutos devem ser apenas para leitura. 
+Os dados brutos devem ser apenas para leitura.&#x20;
 
-```text
+```
 PROJETOS COM MESMO BANCO DE DADOS
 
 Pasta raiz
@@ -116,7 +116,7 @@ PROJETOS COM DIFERENTES BANCOS DADOS
         +-- relatorio
 ```
 
-As pastas podem ser escritas seguindo as regras gerais. Preferencialemente devem ser escritas em sneak\_case com letras minúsculas. Recomendo usar underline \( \_ \) para criação de contexto e traço \( - \) para sequenciamento, referencias geografica, data, individualizações ... Exemplo:
+As pastas podem ser escritas seguindo as regras gerais. Preferencialemente devem ser escritas em sneak\_case com letras minúsculas. Recomendo usar underline ( \_ ) para criação de contexto e traço ( - ) para sequenciamento, referencias geografica, data, individualizações ... Exemplo:
 
 * `projeto_carbono-01`
 * `projeto_carbono-02`
@@ -156,7 +156,7 @@ Essa parte achei interessante um artigo da **Emily Riederer.** Estou adotando o 
 
 Abaxo segue um copiar e colar traduzido do blog dela
 
-> ### Vocabulário Controlado <a id="controlled-vocabulary"></a>
+> ### Vocabulário Controlado <a href="#controlled-vocabulary" id="controlled-vocabulary"></a>
 >
 > A ideia básica de vocabulários controlados é definir antecipadamente um conjunto de palavras, frases ou esboços com significados bem definidos que podem ser usados ​​para indexar informações. Quando esses stubs são definidos para diferentes tipos de informações e peças juntas em uma ordem consistente, o vocabulário se torna uma gramática descritiva que podemos usar para descrever um conteúdo e comportamento mais complexos.
 >
@@ -166,7 +166,7 @@ Abaxo segue um copiar e colar traduzido do blog dela
 >
 > **Nível 1: Tipos de Medidas**
 >
-> Por razões que ficarão evidentes nos exemplos, gosto que o primeiro nível da hierarquia geralmente capture um “tipo” semi-genérico da variável. Esta não é bem é o mesmo que tipos de dados em uma linguagem de programação \(por exemplo  `bool`, `double`, `float`\), apesar de tudo com o mesmo prefixo deve finalmente ser escalado para o mesmo tipo. Em vez disso, esses tipos de dados implicam um tipo de informação e padrões de uso apropriados:
+> Por razões que ficarão evidentes nos exemplos, gosto que o primeiro nível da hierarquia geralmente capture um “tipo” semi-genérico da variável. Esta não é bem é o mesmo que tipos de dados em uma linguagem de programação (por exemplo  `bool`, `double`, `float`), apesar de tudo com o mesmo prefixo deve finalmente ser escalado para o mesmo tipo. Em vez disso, esses tipos de dados implicam um tipo de informação e padrões de uso apropriados:
 >
 > * `ID`: Único identificado para uma entidade.
 >   * Numérico para armazenamento e junções mais eficientes, a menos que o sistema de registro gere IDs com caracteres
@@ -184,7 +184,7 @@ Abaxo segue um copiar e colar traduzido do blog dela
 > * `TM`: Carimbo de data / hora de algum evento
 >   * Sempre elenco como um `YYYY-MM-DD HH:MM:SS`carimbo de data / hora
 >   * Distinguir datas de carimbos de hora evitará junções defeituosas de dois campos de data organizados de forma diferente
-> * `CAT`: Variável categórica como uma sequência de caracteres \(potencialmente codificada de um `ID`campo\)
+> * `CAT`: Variável categórica como uma sequência de caracteres (potencialmente codificada de um `ID`campo)
 >
 > Embora sejam relativamente genéricos, categorias específicas de domínio também podem ser usadas. Por exemplo, como a localização é tão importante para o compartilhamento de carona, pode valer a pena tê-la `ADDR`como uma categoria de nível 1.
 >
@@ -195,9 +195,9 @@ Abaxo segue um copiar e colar traduzido do blog dela
 > * `DRIVER`: Informações sobre o motorista
 > * `RIDER`: Informações sobre o passageiro, o passageiro que ligou para o compartilhamento de viagem
 > * `TRIP`: Informações sobre a própria viagem
-> * `ORIG`: Informações sobre o início da viagem \(horário e geografia\)
-> * `DEST`: Informações sobre o destino da viagem \(horário e geografia\)
-> * `COST`: Informações sobre os componentes do custo total \(pode ser um subconjunto de `TRIP`, mas pertence a todas as partes e tem alta cardinalidade na próxima camada, então vamos dividi-la\)
+> * `ORIG`: Informações sobre o início da viagem (horário e geografia)
+> * `DEST`: Informações sobre o destino da viagem (horário e geografia)
+> * `COST`: Informações sobre os componentes do custo total (pode ser um subconjunto de `TRIP`, mas pertence a todas as partes e tem alta cardinalidade na próxima camada, então vamos dividi-la)
 >
 > Obviamente, em um banco de dados altamente normalizado, as medidas dessas diferentes entidades existiriam em tabelas separadas. No entanto, essa disciplina em nomeá-los ainda seria benéfica, de modo que as quantidades não são ambíguas quando um analista as combina.
 >
@@ -207,7 +207,7 @@ Abaxo segue um copiar e colar traduzido do blog dela
 >
 > * `CITY`: Deve ser em maiúsculas? Como os espaços no nome da cidade devem ser tratados?
 > * `ZIP`: Devem ser usados ​​CEPs de 6 ou 10 dígitos?
-> * `LAT`/ `LON`: Para quantas casas decimais a latitude e a longitude devem ser geocodificadas? Se a empresa opera apenas em certas áreas geográficas \(por exemplo, os EUA continental\), cortes grosseiros para estes podem ser determinados
+> * `LAT`/ `LON`: Para quantas casas decimais a latitude e a longitude devem ser geocodificadas? Se a empresa opera apenas em certas áreas geográficas (por exemplo, os EUA continental), cortes grosseiros para estes podem ser determinados
 > * `DIST`: A distância é medida em milhas? Quilômetros?
 > * `TIME`: As durações são medidas em segundos? Minutos?
 > * `RATING`: Quais são os intervalos válidos para outras quantidades conhecidas, como classificações por estrelas?
@@ -236,7 +236,7 @@ Abaxo segue um copiar e colar traduzido do blog dela
 >
 > Para começar, criamos um pequeno conjunto de dados falso usando nosso esquema. Para simplificar, simulo 18 das 35 variáveis ​​listadas acima:
 
-```text
+```
 head(data_trips)
 
 #>   ID_DRIVER ID_RIDER ID_TRIP    DT_ORIG    DT_DEST N_DRIVER_PASSENGERS
@@ -274,9 +274,9 @@ head(data_trips)
 ### Algumas boas práticas
 
 * Começe o codigo sempre com o nome do autor, data de inicio do projeto, nome do projeto, uma pequena descrição do projeto.
-* Particione seu codigo usando `ctrl` + `shift` + `r` ou `#----` ou `#====`  exemplo:
+* Particione seu codigo usando `ctrl` + `shift` + `r` ou `#----` ou `#====` exemplo:
 
-```text
+```
 # Parte 1 --------------------------
 
 a <- c("teste", "teste2")
@@ -293,38 +293,38 @@ print(a)
 * As variaveis devem ter preferencialmente o nome no singular. Quando obrigatoriamente escrito no plural, priorize o uso de coletivo. Exemplo: `funcionarios`deve ser trocado por `equipe`.
 * Carregue os pacotes no inicio do código
 * Em seguida, carregue os dados
-* Depois, carregue as funções \(source\)
+* Depois, carregue as funções (source)
 * Por fim, escreva os demais itens do código
 * Prefira não usar o `return` implicito do R, escreva `return(x)`.
 * Atibua variaveis e funções com `<-` e não `=`
 * Variaveis escopo local com `_` no final, por exemplo `carro_`, isso evitará que funções procurem variaveis fora do escopo planejado.
-* Nomes das variaveis devem ser ou começar o contexto como **substantivos** e as ****funções como **verbos**.
+* Nomes das variaveis devem ser ou começar o contexto como **substantivos** e as **** funções como **verbos**.
 
 ### Estilo dentro do R
 
-| Tipo | Estilo | Exemplo |
-| :--- | :--- | :--- |
-| Variaveis | snake\_case | nome\_alunas |
-| Funções | snake\_case | calcular\_aprovacao |
-| Classes | snake + Pascal case | Projeto\_Casa |
-| Objetos criados por classes | snake + camel case | casa\_Construida |
-| Metodos | snake\_case | dimencionar\_casa |
-| Interface | lower ou  snake\_case | txt ou txt\_descricao |
+| Tipo                        | Estilo                | Exemplo               |
+| --------------------------- | --------------------- | --------------------- |
+| Variaveis                   | snake\_case           | nome\_alunas          |
+| Funções                     | snake\_case           | calcular\_aprovacao   |
+| Classes                     | snake + Pascal case   | Projeto\_Casa         |
+| Objetos criados por classes | snake + camel case    | casa\_Construida      |
+| Metodos                     | snake\_case           | dimencionar\_casa     |
+| Interface                   | lower ou  snake\_case | txt ou txt\_descricao |
 
 Para as variaveis podemos escrever um prefixo definindo o tipo de arquivo
 
-| Abreviação | Tipo |
-| :--- | :--- |
-| vec\_ | vetor |
-| con\_ | constante |
-| tab\_ | tabela |
-| lst\_ | lista |
-| mat\_ | matriz |
-| img\_ | imagem |
-| pnt\_ | ponto |
-| pol\_ | poligono |
-| rst\_ | raster |
-| bin\_ | binario |
+| Abreviação | Tipo      |
+| ---------- | --------- |
+| vec\_      | vetor     |
+| con\_      | constante |
+| tab\_      | tabela    |
+| lst\_      | lista     |
+| mat\_      | matriz    |
+| img\_      | imagem    |
+| pnt\_      | ponto     |
+| pol\_      | poligono  |
+| rst\_      | raster    |
+| bin\_      | binario   |
 
 Os sufixo podem especificar os processos posteriores, com uso de `_` ou `.`
 
@@ -334,7 +334,7 @@ Os sufixo podem especificar os processos posteriores, com uso de `_` ou `.`
 
 ## Referências
 
-&lt;https://www.youtube.com/watch?v=wXIuvdhMOsE&list=TLPQMTMwOTIwMjGPNNiIEa2kEA&index=9&gt;
+\<https://www.youtube.com/watch?v=wXIuvdhMOsE\&list=TLPQMTMwOTIwMjGPNNiIEa2kEA\&index=9>
 
 {% embed url="https://emilyriederer.netlify.app/post/column-name-contracts/" %}
 
@@ -344,11 +344,9 @@ Os sufixo podem especificar os processos posteriores, com uso de `_` ou `.`
 
 {% embed url="https://chrisvoncsefalvay.com/2018/08/09/structuring-r-projects/" %}
 
-{% embed url="https://kdestasio.github.io/post/r\_best\_practices/" %}
+{% embed url="https://kdestasio.github.io/post/r_best_practices/" %}
 
-{% embed url="https://basedosdados.github.io/mais/style\_data/\#nomea%C3%A7%C3%A3o-de-bases-e-tabelas" %}
-
-
+{% embed url="https://basedosdados.github.io/mais/style_data/#nomea%C3%A7%C3%A3o-de-bases-e-tabelas" %}
 
 
 
